@@ -1,0 +1,154 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(2, 17, 44);
+    
+}
+
+li{
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+
+.bat-model{
+    color: white;
+    margin: auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 0px;
+
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+img{
+   height:200px;
+   
+}
+
+#bill{
+    width: 200px;
+    height: 200px;
+}
+
+#bob{
+    width: 200px;
+    height: 200px;
+
+}
+.bat-goat{
+    color: white;
+    margin: 1px;
+    text-align: center;
+    border: 3px solid black;
+    padding: 0px;
+}
+
+nav{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+div{
+    justify-content: center;
+}
+
+
+.buttons {
+    margin-top: 25px;
+    text-align: center;
+    color: yellow;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    outline: none;
+    padding: 0;
+    width: 48px;
+  }
+  
+  #play {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+  }
+  
+  #play.played {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+  }
+  
+  #pause {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+  }
+  
+  #pause.paused {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+  }
+  
+  #stop {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+  }
+  
+  #stop.stopped {
+    background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+  }
+
+  @media (max-width: 700px) {
+    html {
+      font-size: 14pt;
+    }
+    article {
+      width: 90%;
+    }
+  }
+  
+  body {
+    margin: 0;
+  }
+  

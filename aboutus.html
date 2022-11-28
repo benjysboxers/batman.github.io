@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Batman Feats</title>
+        <style>
+            body {
+                background-color: rgb(6, 4, 66);
+            }
+
+            h1{
+                text-align: center;
+                color: white;
+            }
+            u{
+                color: white;
+            }
+
+            h2{
+                text-align: center;
+                color: white;
+            
+            }table, th, td{
+                border: 3px solid;
+                color: yellow;
+                text-align: center;
+                position: relative; left: 80px;
+
+              }
+              #footer{
+                text-align: center;
+                list-style: none;
+                color: white;
+                position: relative; bottom: -240px;
+              }
+              th{
+                position: relative; left: 0px;
+              }
+              td{
+                position: relative; left: 0px;
+              }
+
+              .buttons {
+                margin-top: 25px;
+                text-align: center;
+                color: yellow;
+              }
+              
+              button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                height: 48px;
+                outline: none;
+                padding: 0;
+                width: 48px;
+              }
+              
+              #play {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+              }
+              
+              #play.played {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+              }
+              
+              #pause {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+              }
+              
+              #pause.paused {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+              }
+              
+              #stop {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+              }
+              
+              #stop.stopped {
+                background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+              }
+            
+              @media (max-width: 700px) {
+                html {
+                  font-size: 14pt;
+                }
+                article {
+                  width: 90%;
+                }
+              }
+              
+              body {
+                margin: 0;
+              }
+              
+
+        </style>
+    </head>
+    <div class=buttons>
+        <button id=play></button> &nbsp;
+        <button id=pause></button> &nbsp;
+        <button id=stop></button>
+      </div>
+      <article>
+    <body>
+        <u><h1>About the creators of this website</h1></u>
+        <div class="table">
+            <table style="width: 80%">
+                <tr>
+                  <th>Abdul Cheema</th>
+                  <th>Philip Idowu</th>
+                  <th>Abdel yousef</th>
+
+                </tr>
+                <tr>
+                    <td>Mastering 127 forms of hand to hand combat</td>
+                    <td>Dodges point-blank gunfire from Clayface, and even counters</td>
+                    <td>Has gone toe to toe against Superman in battle</td>
+                </tr>
+        </div>
+        <div id="footer">
+            <u><h3>Created By: Vengeance</h3></u>
+                <li>Abdel Rahman Yousef </li>
+                <li>Abdul Cheema</li>
+                <li>Philip Idowu</li>
+            </div>
+            </article>
+    </body>
+    <script src="textospeech.js"></script>
+</html>

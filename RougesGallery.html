@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Rouges Gallery</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+    }
+    body {
+        background-color: rgb(6, 4, 66);
+        height: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+
+    }
+
+    p {
+        color: white;
+    }
+
+    .container {
+        border-style: outset;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    figure{
+        width: 100%;
+        height: 100%;
+    }
+    figcaption{
+        color: white;
+    }
+    img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    }
+    #footer{
+        text-align: center;
+        color: #fff;
+        list-style: none;
+    }
+
+    .buttons {
+        margin-top: 25px;
+        text-align: center;
+        color: yellow;
+      }
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 48px;
+        outline: none;
+        padding: 0;
+        width: 48px;
+      }
+      
+      #play {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+      }
+      
+      #play.played {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+      }
+      
+      #pause {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+      }
+      
+      #pause.paused {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+      }
+      
+      #stop {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+      }
+      
+      #stop.stopped {
+        background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+      }
+    
+      @media (max-width: 700px) {
+        html {
+          font-size: 14pt;
+        }
+        article {
+          width: 90%;
+        }
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+                /*https://www.hongkiat.com/blog/text-to-speech*/
+
+</style>
+
+<head>
+
+<body>
+    <div class=buttons>
+            <button id=play></button> &nbsp;
+            <button id=pause></button> &nbsp;
+            <button id=stop></button>
+          </div>
+    <article>
+    <div>
+        <h1><u>The Rouges Gallery</u></h1>
+    </div>
+
+    <div class="container">
+        <figure>
+            <figcaption>Joker</figcaption>
+            <img src="joker.png" alt="Joker" />
+          <!--  <"https://www.theatlantic.com/entertainment/archive/2019/10/killing-joke-and-joker/599512//"" /> -->
+
+        </figure>
+
+        <figure>
+            <figcaption>Penguin</figcaption>
+            <img src="penguin.png" alt="penguin">
+          <!--  <https://dc.fandom.com/wiki/Oswald_Cobblepot_(Prime_Earth)" /> -->
+
+        </figure>
+
+        <figure>
+            <figcaption>Riddler</figcaption>
+            <img src="riddler.png" alt="Rizzler">
+                      <!--  https://www.slashfilm.com/789799/the-best-riddler-comics-of-all-time/ /> -->
+
+
+        </figure>
+
+        <figure>
+            <figcaption>Bane</figcaption>
+            <img src="bane.jpg" alt="bane">
+                      <!-- https://www.looper.com/427075/the-dark-history-of-bane/ -->
+
+        </figure>
+
+        <figure>
+            <figcaption>Two-Face</figcaption>
+            <img src="Two-Face_0002.webp" alt="Two-face">
+                      <!-- "https://dc.fandom.com/wiki/Harvey_Dent_(New_Earth)" /> -->
+
+        </figure>
+
+        <figure>
+            <figcaption>Scarecrow</figcaption>
+            <img src="scarecrow_batman.webp" alt="Scarecrow">
+    <!-- https://dc.fandom.com/wiki/Jonathan_Crane_(Prime_Earth) /> -->
+
+        </figure>
+    </div>
+    <div id="footer">
+        <u><h3>Created By: Vengeance</h3></u>
+        <li>Abdel Rahman Yousef </li>
+        <li>Abdul Cheema</li>
+        <li>Philip Idowu</li>
+    </div>
+    </article>
+</body>
+<script src="textospeech.js"></script>
+
+</head>
+
+</html>
