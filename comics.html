@@ -56,7 +56,7 @@
         object-fit: cover;
     }
 
-    #footer {
+    footer {
         text-align: center;
         color: #fff;
         list-style: none;
@@ -116,6 +116,15 @@
         margin: 0;
     }
 
+    .banner {
+        border: 40px solid orange;
+      }
+    
+      .contained {
+        position: relative;
+        bottom: -50px;
+      }
+
     /*https://www.hongkiat.com/blog/text-to-speech*/
 </style>
 
@@ -128,9 +137,18 @@
         <button id=stop></button>
     </div>
     <article>
+        <div class="contained">
+            <b>
+                <p class="text" style="text-align: center;">The Dark Knight<br>
+                    Private Information Page Of The most Iconic Hero</p>
+            </b>
+        </div>
+        <div class="banner">
+        </div>
         <div>
             <h1><u>Latest Comics</u></h1>
         </div>
+
 
         <div class="container">
             <figure>
@@ -186,17 +204,19 @@
 
             </figure>
         </div>
-        <div id="footer">
+
+        <footer>
             <u>
                 <h3>Created By: Vengeance</h3>
             </u>
             <li>Abdel Rahman Yousef </li>
             <li>Abdul Cheema</li>
             <li>Philip Idowu</li>
-        </div>
+            </footer>
     </article>
 </body>
-<script src="textospeech.js"></script>
+<script src="textospeech.js"></script>     <!--https://www.hongkiat.com/blog/text-to-speech*/ -->
+
 </head>
 
 </html>
