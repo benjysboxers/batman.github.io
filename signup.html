@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" type="text/css" href="style.sign.css">
+    <style>
+        .buttons {
+            margin-top: 25px;
+            text-align: center;
+            color: yellow;
+            position: relative; right: -0px; top: 150px; 
+          }
+
+          button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            height: 48px;
+            outline: none;
+            padding: 0;
+            width: 48px;
+          }
+          
+          #play {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+          }
+          
+          #play.played {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+          }
+          
+          #pause {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+          }
+          
+          #pause.paused {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+          }
+          
+          #stop {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+          }
+          
+          #stop.stopped {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+          }
+        
+          @media (max-width: 700px) {
+            html {
+              font-size: 14pt;
+            }
+            article {
+              width: 90%;
+            }
+          }
+          
+          body {
+            margin: 0;
+          }
+
+          /* https://github.com/thedevdrawer/js-login */
+          /*https://www.hongkiat.com/blog/text-to-speech*/
+          
+    </style>
+</head>
+<div class=buttons>
+    <button id=play></button> &nbsp;
+    <button id=pause></button> &nbsp;
+    <button id=stop></button>
+  </div>
+<article>
+<img class="batlogo" src="logo.png">
+<div class="contained">
+<b><p class="text" style="text-align: center;">The Dark Knight<br>
+    Private Information Page Of The most Iconic Hero</p></b>
+<div class="banner">
+</div>
+<body class="Signup">
+    <div class="container">
+        <h2 class="text-center">Signup</h2>
+        <br>
+        <form action="index.html" class="SignupForm">
+            <div class="input-group">
+                <label for="username" class="label">Email</label>
+                <input type="text" id="username" class="input" required>
+                <span class="error-message"></span>
+            </div>
+
+            <br>
+            <div class="input-group">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" class="input" required>
+                <span class="error-message"></span>
+            </div>
+
+            <br>
+            <div class="input-group">
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input" required>
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <button class="button" type="submit">Signup</button>
+        </form>
+    </div>
+    </div>
+    <div id="footer">
+        <u><h3>Created By: Vengeance</h3></u>
+            <li>Abdel Rahman Yousef </li>
+            <li>Abdul Cheema</li>
+            <li>Philip Idowu</li>
+        </div>
+        </article>
+</body>
+<script src="textospeech.js"></script>
+</html>
