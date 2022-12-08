@@ -1,38 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Kevin Conroy</title>
-        <style>
-            body{
+
+<head>
+    <meta charset="utf-8">
+    <title>Kevin Conroy</title>
+    <style>
+        body {
             background-color: rgb(6, 4, 66);
             width: 100%;
             height: 100%;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        u {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            list-style: none;
+            color: white;
+        }
+
+        .banner {
+            border: 40px solid orange;
+        }
+
+        .contained {
+            position: relative;
+            bottom: -70px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            text-align: center;
+            color: yellow;
+            position: relative;
+            right: -0px;
+            top: 40px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            height: 48px;
+            outline: none;
+            padding: 0;
+            width: 48px;
+        }
+
+        #play {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+        }
+
+        #play.played {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+        }
+
+        #pause {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+        }
+
+        #pause.paused {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+        }
+
+        #stop {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+        }
+
+        #stop.stopped {
+            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+        }
+
+        @media (max-width: 700px) {
+            html {
+                font-size: 14pt;
             }
-            h1{
-                color: white;
+
+            article {
+                width: 90%;
             }
-            u{
-                color: white;
-            }
-            #footer{
-                text-align: center;
-                list-style: none;
-                color: white;
-            }
-        </style>
-    </head>
-    <body>
-     <u><em><h1 style="text-align: center;">Play this audio for something magical</h1></em></u>
-     <video width="400px" height="300px" controls>
-        <source src="Kevin Conroy_ A Great Batman A Better Man.mp3" type="video/mp4">
-    </video>
-    </body>
-    <div id="footer">
-        <u><h3>Created By: Vengeance</h3></u>
-            <li>Abdel Rahman Yousef </li>
-            <li>Abdul Cheema</li>
-            <li>Philip Idowu</li>
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <u><em>
+                <h1 style="text-align: center;">Play this audio for something magical</h1>
+            </em></u>
+            <div class=buttons>
+                <button id=play></button> &nbsp;
+                <button id=pause></button> &nbsp;
+                <button id=stop></button>
+            </div>
+        <div class="contained">
+            <b>
+                <p class="text" style="text-align: center;">The Dark Knight<br>
+                    Private Information Page Of The most Iconic Hero</p>
+            </b>
         </div>
-        </article>
+        <div class="banner">
+        </div>
+        <video width="400px" height="300px" controls>
+            <source src="Kevin Conroy_ A Great Batman A Better Man.mp3" type="video/mp4">
+        </video>
+
+</body>
+<footer>
+    <u>
+        <h3>Created By: Vengeance</h3>
+    </u>
+    <li>Abdel Rahman Yousef </li>
+    <li>Abdul Cheema</li>
+    <li>Philip Idowu</li>
+</footer>
+</article>
+<script src="textospeech.js"></script>
+
 </html>
