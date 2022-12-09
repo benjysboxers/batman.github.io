@@ -1,139 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Feedback</title>
-    <style>
-        body {
-            background-color: rgb(6, 4, 66);
-        }
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <style>
+    body {
+      background-color: rgb(6, 4, 66);
+    }
 
-        h1 {
-            position: relative;
-            top: 30px;
-            color: yellow;
-        }
+    h2 {
+      position: relative;
+      top: 30px;
+      color: yellow;
+    }
 
-        #form {
-            text-align: center;
-            margin-top: 50px;
-            color: white;
-        }
+    #form {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+    }
 
-        button {
-            margin-top: 20px;
-        }
-        footer{
-            text-align: center;
-            list-style: none;
-        }
+    button {
+      margin-top: 20px;
+    }
 
-        .buttons {
-            margin-top: 25px;
-            text-align: center;
-            color: yellow;
-          }
+    footer {
+      text-align: center;
+      list-style: none;
+      margin: 20px;
+    }
 
-        button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            height: 48px;
-            outline: none;
-            padding: 0;
-            width: 48px;
-          }
-          
-          #play {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
-          }
-          
-          #play.played {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
-          }
-          
-          #pause {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
-          }
-          
-          #pause.paused {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
-          }
-          
-          #stop {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
-          }
-          
-          #stop.stopped {
-            background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
-          }
-        
-          @media (max-width: 700px) {
-            html {
-              font-size: 14pt;
-            }
-            article {
-              width: 90%;
-            }
-          }
-          
-          body {
-            margin: 0;
-          }
+    .buttons {
+      margin-top: 25px;
+      text-align: center;
+      color: yellow;
+    }
 
-          .banner {
-            border: 40px solid orange;
-            margin-bottom: 10px;
-          }
-        
-          .contained {
-            position: relative;
-            bottom: -70px;
-          }
-                    /*https://www.hongkiat.com/blog/text-to-speech*/
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      height: 48px;
+      outline: none;
+      padding: 0;
+      width: 48px;
+    }
 
-          
-    </style>
+    #play {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play.svg);
+    }
+
+    #play.played {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/play1.svg);
+    }
+
+    #pause {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause.svg);
+    }
+
+    #pause.paused {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/pause1.svg);
+    }
+
+    #stop {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop.svg);
+    }
+
+    #stop.stopped {
+      background-image: url(https://rpsthecoder.github.io/js-speech-synthesis/stop1.svg);
+    }
+
+    @media (max-width: 700px) {
+      html {
+        font-size: 14pt;
+      }
+
+      article {
+        width: 90%;
+      }
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .banner {
+      border: 40px solid orange;
+      margin-bottom: 10px;
+    }
+
+    .contained {
+      position: relative;
+      bottom: -70px;
+    }
+
+    /*https://www.hongkiat.com/blog/text-to-speech*/
+  </style>
 </head>
 
 <body>
-    <div class=buttons>
-            <button id=play></button> &nbsp;
-            <button id=pause></button> &nbsp;
-            <button id=stop></button>
-          </div>
-          <article>
+  <div class=buttons>
+    <button id=play></button> &nbsp;
+    <button id=pause></button> &nbsp;
+    <button id=stop></button>
+  </div>
+  <article>
     <section>
       <div class="contained">
-        <b>
-          <p class="text" style="text-align: center;">The Dark Knight<br>
-            Private Information Page Of The most Iconic Hero</p>
-        </b>
+        <p class="text" style="text-align: center;">The Dark Knight<br>
+          Private Information Page Of The most Iconic Hero</p>
+
       </div>
       <div class="banner">
       </div>
-        <h1 style="text-align: center;">Feedback if this page was helpful</h1>
-        <div id="form">
-            <form action="https://webdevbasics.net/scripts/demo.php" method="post" target="_blank">
-                <b> <label><input id="informative" type="radio" name="form-answer" value="Very Infromative">Very
-                        Infromative</label>
-                    <label><input id="informative" type="radio" name="form-answer" value="Somewhat Informative">Somewhat
-                        Informative</label>
-                    <label><input id="informative" type="radio" name="form-answer" value="Kind of Informative">Kind of Informative</label>
-                    <label><input id="informative" type="radio" name="form-answer" value="Not helpful">Not helpful</label>
-                </b><br>
-                <input type="submit">
-            </form>
-            <footer>
-                <u><h3>Created By: Vengeance</h3></u>
-                    <li>Abdel Rahman Yousef </li>
-                    <li>Abdul Cheema</li>
-                    <li>Philip Idowu</li>
-            </footer>
-        </div>
+      <h2 style="text-align: center;">Feedback if this page was helpful</h2>
+      <div id="form">
+        <form action="https://webdevbasics.net/scripts/demo.php" method="post" target="_blank">
+          <b> <label><input id="informative1" type="radio" name="form-answer" value="Very Infromative">Very
+              Infromative</label>
+            <label><input id="informative2" type="radio" name="form-answer" value="Somewhat Informative">Somewhat
+              Informative</label>
+            <label><input id="informative3" type="radio" name="form-answer" value="Kind of Informative">Kind of
+              Informative</label>
+            <label><input id="informative4" type="radio" name="form-answer" value="Not helpful">Not helpful</label>
+          </b><br>
+          <input type="submit">
+        </form>
+        <footer>
+          <u>Created By: Vengeance</u>
+          <li>Abdel Rahman Yousef </li>
+          <li>Abdul Cheema</li>
+          <li>Philip Idowu</li>
+        </footer>
+      </div>
     </section>
-    </article>
+  </article>
 </body>
 <script src="textospeech.js"></script>
 
